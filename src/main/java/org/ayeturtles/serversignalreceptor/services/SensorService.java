@@ -1,7 +1,7 @@
 package org.ayeturtles.serversignalreceptor.services;
 
-import org.ayeturtles.serversignalreceptor.model.SensorDataReq;
+import org.ayeturtles.serversignalreceptor.model.SensorRecordDataReq;
 
 public interface SensorService {
-    String sendDataToPersistence(SensorDataReq sensorDataReq);
+    String processSensorRecordData(SensorRecordDataReq sensorRecordDataReq);
 }

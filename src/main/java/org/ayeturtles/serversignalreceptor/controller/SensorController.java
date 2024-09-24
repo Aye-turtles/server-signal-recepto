@@ -1,6 +1,6 @@
 package org.ayeturtles.serversignalreceptor.controller;
 
-import org.ayeturtles.serversignalreceptor.model.SensorDataReq;
+import org.ayeturtles.serversignalreceptor.model.SensorRecordDataReq;
 import org.ayeturtles.serversignalreceptor.services.SensorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,10 +16,10 @@ public class SensorController {
     @Autowired
     private SensorService service;
 
-    @PostMapping("/process")
-    public ResponseEntity<String> processSensorData(@RequestBody SensorDataReq sensorDataReq) {
-        System.out.println(sensorDataReq);
-        String response = service.sendDataToPersistence(sensorDataReq);
+    @PostMapping("/process/aye/v1")
+    public ResponseEntity<String> processSensorData(@RequestBody SensorRecordDataReq sensorRecordDataReq) {
+        System.out.println(sensorRecordDataReq);
+        String response = service.processSensorRecordData(sensorRecordDataReq);
         return ResponseEntity.ok(response);
     }
 }

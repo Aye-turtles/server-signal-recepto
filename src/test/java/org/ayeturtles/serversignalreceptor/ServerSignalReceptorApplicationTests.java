@@ -8,6 +8,7 @@ class ServerSignalReceptorApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }

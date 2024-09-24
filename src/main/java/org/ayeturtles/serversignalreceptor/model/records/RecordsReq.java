@@ -6,8 +6,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.ayeturtles.serversignalreceptor.model.nests.NestsReq;
+import org.ayeturtles.serversignalreceptor.model.org.OrganizationsReq;
+import org.ayeturtles.serversignalreceptor.model.sensors.SensorsReq;
+import org.ayeturtles.serversignalreceptor.model.user.UserReq;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -19,7 +23,7 @@ public class RecordsReq {
     @JsonProperty("nest")
     private NestsReq nest;
     @JsonProperty("samplingDateTime")
-    private Timestamp samplingDateTime;
+    private LocalDateTime samplingDateTime;
     @JsonProperty("temperature")
     private Float temperature;
     @JsonProperty("humidityPercentage")
@@ -32,8 +36,6 @@ public class RecordsReq {
     private Float y;
     @JsonProperty("z")
     private Float z;
-    @JsonProperty("timing")
-    private Integer timing;
     @JsonProperty("isTesting")
     private Boolean isTesting;
     @JsonProperty("recordNumber")

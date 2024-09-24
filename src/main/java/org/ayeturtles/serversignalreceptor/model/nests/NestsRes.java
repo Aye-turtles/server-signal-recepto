@@ -10,6 +10,7 @@ import org.ayeturtles.serversignalreceptor.model.sensors.SensorsRes;
 import org.ayeturtles.serversignalreceptor.model.user.UserRes;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -43,20 +44,19 @@ public class NestsRes {
     @JsonProperty("zone")
     private Character zone;
     @JsonProperty("layingDate")
-    private Timestamp layingDate;
+    private LocalDateTime layingDate;
     @JsonProperty("collectionDate")
-    private Timestamp collectionDate;
+    private LocalDateTime collectionDate;
     @JsonProperty("monitoringStartDate")
-    private Timestamp monitoringStartDate;
+    private LocalDateTime monitoringStartDate;
     @JsonProperty("monitoringEndDate")
-    private Timestamp monitoringEndDate;
+    private LocalDateTime monitoringEndDate;
     @JsonProperty("firstHatchingRecordedDate")
-    private Timestamp firstHatchingRecordedDate;
+    private LocalDateTime firstHatchingRecordedDate;
     @JsonProperty("lastHatchingRecordedDate")
-    private Timestamp lastHatchingRecordedDate;
+    private LocalDateTime lastHatchingRecordedDate;
     @JsonProperty("nestCleaningDate")
-    private Timestamp nestCleaningDate;
+    private LocalDateTime nestCleaningDate;
     @JsonProperty("nestBehavior")
     private String nestBehavior;
-
 }

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import org.ayeturtles.serversignalreceptor.model.user.UserRes;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -20,9 +21,9 @@ public class OrganizationsRes {
     @JsonProperty("name")
     private String name;
     @JsonProperty("dateActive")
-    private Timestamp dateActive;
+    private LocalDateTime dateActive;
     @JsonProperty("dateInactive")
-    private Timestamp dateInactive;
+    private LocalDateTime dateInactive;
     @JsonProperty("isActive")
     private Boolean isActive;
     @JsonProperty("contact")

@@ -9,14 +9,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SensorDataReq {
-    private String testing;
-    private String id;
+public class SensorRecordDataReq {
+    private Boolean testing;
+    private String assignedID;
     private int numberOfScann;
     private int timing;
-    private double x;
-    private double y;
-    private double z;
+    private float x;
+    private float y;
+    private float z;
     private double temperature;
     private int moisture;
     private String version;
